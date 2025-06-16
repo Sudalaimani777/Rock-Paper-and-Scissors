@@ -1,45 +1,11 @@
-// const btnOne = document.getElementById("btnOne");
-
-
-// const purchased = [
-//     {
-//         id: 1,
-//         item : "Shirts"
-//     },
-
-//     {
-//         id : 2,
-//         item : "Pants"
-//     },
-
-//     {
-//         id
-//     }
-
-// ]
-
-
-// console.log(purchased);
-
-// //Adding Delete Event 
-// btnOne.addEventListener("click", e => {
-    
-//     delete purchased[0].item;
-//     console.log(purchased[0]);
-
-// })
-
-
 const playerChoice = prompt(`Enter the rock, paper or scissors`).toLocaleLowerCase().trim();
-
-// console.log(playerChoice);
 
 const  randomNumber = Math.ceil(Math.random() * 3);
 console.log(randomNumber);
 
-
 let computer = "";
 
+//SwitchCase
 switch (randomNumber) {
     case 1:
         computer = "rock";
@@ -55,8 +21,7 @@ switch (randomNumber) {
         break;
 }
 
-// console.log(computer);
-
+//LOGIC
 if (playerChoice === computer) {
     alert(`The game is draw because you choose ${playerChoice} and the computer choosed ${computer}`)
 }
