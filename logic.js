@@ -1,4 +1,4 @@
-const playerChoice = prompt(`Enter the rock, paper or scissors`).toLocaleLowerCase().trim();
+const playerChoice = prompt(`Enter the rock, paper or scissors`).toLowerCase().trim();
 
 const  randomNumber = Math.ceil(Math.random() * 3);
 console.log(randomNumber);
